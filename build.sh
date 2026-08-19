@@ -14,7 +14,8 @@ for browser in chrome firefox; do
   # Copy everything except the manifest variants, dist output, and dev-only files.
   rsync -a --exclude 'manifest.*.json' --exclude 'dist-*' --exclude '.git' \
     --exclude 'backend' --exclude '.claude' --exclude 'build.sh' \
-    --exclude 'README.md' --exclude 'THIRD_PARTY_LICENSES.md' ./ "$dest/"
+    --exclude 'README.md' --exclude 'THIRD_PARTY_LICENSES.md' \
+    --exclude 'icons/logo.png' ./ "$dest/"
   cp "manifest.$browser.json" "$dest/manifest.json"
   echo "Staged $dest/"
 done
