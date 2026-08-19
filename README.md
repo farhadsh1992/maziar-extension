@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icons/icon128.png" alt="Maziar logo" width="220">
+  <img src="icons/icon128.png" alt="Maziar logo" width="96">
 </p>
 
 # Maziar (Browser Extension)
